@@ -22,6 +22,6 @@ class Voetbalspeler(models.Model):
     datumaanmaking = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
-def publish(self):
+    def publish(self):
        self.published_date = timezone.now()
        self.save()
