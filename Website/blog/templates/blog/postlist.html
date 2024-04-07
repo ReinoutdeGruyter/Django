@@ -1,21 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Is something working?</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+<header>
+<h1>Mijn website</h1>
+</header>
 {% block content %}
 {% for post in posts %}
-<article class="Post">
+<article class="post">
 <time class="date">
 {{ post.published_date }}
 </time>
-<h2><a href="">{{ Post.title }}</a></h2>
-<p>{{ Post.text|linebreaksbr }}</p>
+<h2><a href="">{{ post.title }}</a></h2>
+<p>{{ post.text|linebreaksbr }}</p>
 </article>
 {% endfor %}
 {% endblock %}
+<footer>
+</footer>
 </body>
 </html>
 

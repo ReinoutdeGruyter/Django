@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(99, 22, 13);
+    color: black;
+    width: 100%;   
+    left: 0;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    height: 100%;
+}
+header{ 
+    background-color: darkorange;
+    width: inherit;
+    left: 0;
+    top: 0;
+    padding: 0;
+    min-height: 100px;
+}
+
+header h1{
+    color: black;
+    margin: 0;
+    padding: 50px 30px 50px;
+}
+article{
+    width: 30%;
+    margin-bottom: 40px;
+    border: 3px solid white;
+    margin-left: 60%;
+    background-color: salmon;
+    color: black;
+    margin-top: 10px;
+    height: auto;
+   
+}
+a{ color: yellow;
+}
+footer{ background-color: darkorange;
+        min-height: 75px;
+}
+html{ margin: 0;
+    left: 0;
+    top: 0;
+    padding: 0;
+    height: 100%;
+}
