@@ -7,11 +7,12 @@
 <body>
 {% block content %}
 {% for post in posts %}
-<article class="post">
+<article class="Post">
 <time class="date">
 {{ post.published_date }}
-</time><h2><a href="">{{ post.title }}</a></h2>
-<p>{{ post.text|linebreaksbr }}</p>
+</time>
+<h2><a href="">{{ Post.title }}</a></h2>
+<p>{{ Post.text|linebreaksbr }}</p>
 </article>
 {% endfor %}
 {% endblock %}
